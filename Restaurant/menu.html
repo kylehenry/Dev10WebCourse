@@ -7,6 +7,31 @@ Most recent revision: 1/7/2020
 <html lang="en">
 	<head>
 		<title>Menu</title>
+		<link href="styles/restaurantStyles.css" rel="stylesheet" type="text/css" />
+		
+		<style>
+			caption {
+				text-align: left;
+				font-weight: bold;
+			}
+			
+			#bevs {
+				width: 50%;
+				border: 1px solid #546a7b
+			}
+			
+			table, td {
+				padding: 0;
+			}
+			
+			tr {
+				height: 30px;
+			}
+			
+			#bevs tr:nth-child(even) {
+				background-color: #e4c3ad;
+			}
+		</style>
 	</head>
 	
 	<body>
@@ -15,9 +40,10 @@ Most recent revision: 1/7/2020
 		</header>
 		
 		<nav>
-			<hr />
-			<div><p><a href="index.html">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="menu.html">Menu</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="contact.html">Contact Us</a></p>
-			<hr />
+			<p><a href="index.html">Home</a></p>
+			<p><a href="menu.html">Menu</a></p>
+			<p><a href="contact.html">Contact Us</a></p>
+			<div class="clear-float"></div>
 		</nav>
 		
 		<section>
@@ -34,10 +60,31 @@ Most recent revision: 1/7/2020
 					<td width="30%"><h3 style="text-align:center">Chocolate</h3><p style="text-align:center">Chocolate pudding in your choice of graham cracker or our classic crust.</p></td>
 				</tr>
 			</table>
+			
+			<table id="bevs">
+				<tr>
+					<td colspan="2"><p><strong>Beverages</strong></p></td>
+				</tr>
+				<tr>
+					<td>Bottled Water</td>
+					<td>$1.00</td>
+				</tr>
+				<tr>
+					<td>Tea</td>
+					<td>$2.50</td>
+				</tr>
+				<tr>
+					<td>Coffee</td>
+					<td>$2.50</td>
+				</tr>
+				<tr>
+					<td>Soda</td>
+					<td>$2.00</td>
+				</tr>
+			</table>
 		</section>
 		
 		<footer>
-			<hr />
 			<p style="text-align:center">7 Main St., Port Jefferson, New York, 11777</p>
 			<p style="text-align:center">555-555-1005</p>
 		</footer>

@@ -1,0 +1,55 @@
+/*
+Name: Kyle Johnson
+Date Created: 1/7/2020
+Most recent revision: 1/9/2020
+*/
+
+body {
+	max-width: 1000px;
+	margin: 0 auto;
+	background-color: #fef9ff;
+	color: #5b7d87;
+}
+
+header, footer {
+	font-family: helvetica, arial, sans-serif;
+	text-align: center;
+	background-color: #5b7d87;
+	color: #fef9ff;
+	height: 100px;
+	text-align: center;
+	padding: 30px 10px 20px 10px;
+}
+
+nav {
+	border-top: 3px dashed #546a7b;
+	border-bottom: 3px dashed #546a7b;
+	margin-top: 4px;
+	background-color: #e4c3ad;
+}
+
+nav a{
+	color: #fef9ff;
+	padding: 8px;
+	text-decoration: none;
+	text-align: center;
+	display: block;
+	margin: 20px;
+	width: 100px;
+	float: left;
+	padding: 8px;
+	border: thin solid #0d1f2d;
+	background-color: #5b7d87;
+}
+
+nav a:visited {
+	color: #e4c3ad;
+}
+
+nav a:hover {
+	font-weight: bold;
+}
+
+.clear-float {
+	clear: both;
+}
