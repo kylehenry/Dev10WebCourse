@@ -7,29 +7,34 @@ Most recent revision: 1/7/2020
 <html lang="en">
 	<head>
 		<title>Kyle Johnson's Portfolio</title>
+		<link href="teststyles.css" rel="stylesheet" type="text/css" />
+		<style>
+			header {
+				background-color: darkgray;
+			}
+		</style>
 	</head>
 	<body>
 		<main>
 			<header>
 				<h1>Portfolio for Kyle Johnson</h1>
 			</header>
-			<nav>
-				<hr />
-				<!-- We need to add links to projects.html, contact.html, and testimonials.html -->
+			<nav class="border">
+				<hr style="border: thin dotted red;" />
 				<p><a href="projects.html">Projects</a></p>
 				<p><a href="contact.html">Contact</a></p>
 				<p><a href="testimonials.html">Testimonials</a></p>
-				<hr />
+				<hr style="width: 50%; border: 2px solid blueviolet;" />
 			</nav>
 			<section>
-				<article id="about-me">
+				<article class="border" id="about">
 					<h2><em>About Me</em></h2>
 					<img src="images/portrait-350px.png" alt="Portrait of Kyle Johnson" />
 					<p>My name is <strong>Kyle Johnson</strong>, and I am a 25-year-old <strong>Computer Science</strong> graduate from <strong>Stony Brook University</strong>.</p>
 					<p>I am a driven Software Developer who is <strong>skilled at developing programs</strong> and processes that meet and exceed objectives. 
 						I am a social programmer, possessing <strong>excellent people, communication, organizational, and analytical skills</strong>.</p>
 				</article>
-				<article id="past-experiences">
+				<article id="experience">
 					<h2><em>Past Experiences</em></h2>
 					<img src="images/bnl_poster-350px.png" alt="Project Poster" />
 					<!--<p>During my education, <span style="background-color: lightblue; border: thin solid darkblue;">I spent three summers at Brookhaven National Laboratory</span>, where I developed tools for controlling 
@@ -94,7 +99,7 @@ Most recent revision: 1/7/2020
 					</ul>
 				</article>
 			</section>
-			<footer>
+			<footer style="background-color: fuchsia">
 				<hr />
 				<p>&copy; 2020 Kyle Johnson. All rights reserved.</p>
 			</footer>
