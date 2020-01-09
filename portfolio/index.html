@@ -2,15 +2,42 @@
 <!--
 Name: Kyle Johnson
 Date Created: 1/7/2020
-Most recent revision: 1/7/2020
+Most recent revision: 1/8/2020
 -->
 <html lang="en">
 	<head>
 		<title>Kyle Johnson's Portfolio</title>
-		<link href="teststyles.css" rel="stylesheet" type="text/css" />
+		<!--<link href="styles/teststyles.css" rel="stylesheet" type="text/css" />-->
+		<link href="styles/main.css" rel="stylesheet" type="text/css" />
 		<style>
-			header {
-				background-color: darkgray;
+			caption {
+				font-weight: bold;
+				font-size: 1.2em;
+				margin-bottom: 8px;
+			}
+			
+			table, th, td {
+				border: 1px solid #0d1f2d;
+				border-collapse: collapse;
+				padding: 5px 10px;
+			}
+			
+			table {
+				width: 90%;
+				margin: auto;
+			}
+			
+			tr {
+				height: 30px;
+			}
+			
+			th {
+				background-color: #546a7b;
+				color: #f2eded;
+			}
+			
+			tr:nth-child(odd) {
+				background-color: #e4c3ad;
 			}
 		</style>
 	</head>
@@ -20,11 +47,9 @@ Most recent revision: 1/7/2020
 				<h1>Portfolio for Kyle Johnson</h1>
 			</header>
 			<nav class="border">
-				<hr style="border: thin dotted red;" />
 				<p><a href="projects.html">Projects</a></p>
 				<p><a href="contact.html">Contact</a></p>
 				<p><a href="testimonials.html">Testimonials</a></p>
-				<hr style="width: 50%; border: 2px solid blueviolet;" />
 			</nav>
 			<section>
 				<article class="border" id="about">
@@ -44,21 +69,30 @@ Most recent revision: 1/7/2020
 						clinic, which was designed to reach patients in an effective manner with minimal costs.</p>-->
 					<table>
 						<caption>Employment History</caption>
-						<tr>
-							<th>Years of Employment</th>
-							<th>Title</th>
-							<th>Company</th>
-						</tr>
-						<tr>
-							<td>2015-2017</td>
-							<td>Intern/Student Assistant</td>
-							<td>Brookhaven National Laboratory</td>
-						</tr>
-						<tr>
-							<td>2013-2017</td>
-							<td>Student</td>
-							<td>Stony Brook University</td>
-						</tr>
+						<thead>
+							<tr>
+								<th>Years of Employment</th>
+								<th>Title</th>
+								<th>Company</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>2015-2017</td>
+								<td>Intern/Student Assistant</td>
+								<td>Brookhaven National Laboratory</td>
+							</tr>
+							<tr>
+								<td>2013-2017</td>
+								<td>Student</td>
+								<td>Stony Brook University</td>
+							</tr>
+							<tr>
+								<td>2012-2013</td>
+								<td>Student</td>
+								<td>Suffolk County Community College</td>
+							</tr>
+						</tbody>
 					</table>
 				</article>
 				<article id="hobbies">
@@ -99,8 +133,7 @@ Most recent revision: 1/7/2020
 					</ul>
 				</article>
 			</section>
-			<footer style="background-color: fuchsia">
-				<hr />
+			<footer>
 				<p>&copy; 2020 Kyle Johnson. All rights reserved.</p>
 			</footer>
 		</main>
