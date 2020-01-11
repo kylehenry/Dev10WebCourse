@@ -17,13 +17,23 @@
 				padding-bottom: 12px;
 			}
 			
-			nav .btn {
+			nav .btn, .card-header {
 				background-color: #5b7d87;
 				color: #fef9ff;
 			}
 			
 			nav .btn:hover {
 				font-weight: bold;
+			}
+			
+			.card-header button {
+				color: #fef9ff;
+			}
+			
+			.card-header button:hover {
+				font-weight: bold;
+				color: #fef9ff;
+				text-decoration: none;
 			}
 		</style>
 	</head>
@@ -56,6 +66,44 @@
 					<p>Proin convallis orci at venenatis euismod. In rhoncus ligula non nibh pellentesque rutrum. Nunc vel mauris diam.</p>
 				</div>
 			</div>
+			
+			<div class="accordion" id="accordionExample">
+				<div class="card">
+					<div class="card-header" id="portfolio01">
+						<h5 class="mb-0">
+							<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+								My First Portfolio Piece
+							</button>
+						</h5>
+					</div> <!-- .cardheader #portfolio02 -->
+					
+					<div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+						<div class="card-body">
+							<p><a href="" target="_blank">Name of Website</a></p>
+							<figure><img src="images/website-1778529.png" alt="Screenshot of home page" /></figure>
+						</div>
+					</div>
+				</div> <!-- .card -->
+			</div> <!-- #accordionExample -->
+			
+			<div class="accordion" id="accordionExample2">
+				<div class="card">
+					<div class="card-header" id="portfolio02">
+						<h5 class="mb-0">
+							<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+								My Second Portfolio Piece
+							</button>
+						</h5>
+					</div> <!-- .card-header #portfolio02 -->
+					
+					<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+						<div class="card-body">
+							<p><a href="" target="_blank">Name of Website</a></p>
+							<figure><img src="images/website-1778529.png" alt="Screenshot of home page" /></figure>
+						</div>
+					</div> <!-- .collapse #collapseTwo -->
+				</div> <!-- .card -->
+			</div> <!-- #accordionExample2" -->
 		</div>
 	
 		<!-- CDN links copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/Links to an external site. (Links to an external site.) -->
