@@ -14,25 +14,7 @@ Most recent revision: 1/12/2020
 		<script src="https://kit.fontawesome.com/1fd4c58206.js" crossorigin="anonymous"></script>
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 		<link href="styles/restaurantStyles.css" rel="stylesheet" type="text/css" />
-		
-		<style>
-			.required  {
-				font-weight: bold;
-			}
-			
-			form {
-				margin: 0 auto;
-				text-align: left;
-			}
-			
-			input, select, textarea {
-				margin-top: 10px;
-			}
-			
-			#additional * {
-				vertical-align: middle;
-			}
-		</style>
+		<link href="styles/contactStyles.css" rel="stylesheet" type="text/css" />
 	</head>
 	
 	<body>
@@ -53,49 +35,84 @@ Most recent revision: 1/12/2020
 				</li>
 			</ul>
 			
-			<section style="text-align:center">
-				<form action="submit.html" method="POST" align="center">
-					<label class="required" for="name">Name:</label>
-					<input type="text" id="name" name="name"> <br />
-					<label class="required" for="email">Email:</label>
-					<input type="text" id="email" name="email"> <br />
-					<label class="required" for="phone">Phone:</label>
-					<input type="text" id="phone" name="phone"> <br />
-					
-					<label class="required" for="reason">Reason for Inquiry:</label>
-					<select id="reason" name="reason">
-						<option value="catering" selected>Catering</option>
-						<option value="party">Private Party</option>
-						<option value="feedback">Feedback</option>
-						<option value="other">Other</option>
-					</select> <br />
-					
-					<div id="additional">
-						<label for="info" style="padding-top: 0px;">Additional Information:</label>
-						<textarea id="info" name="info"></textarea> <br />
+			<form action="submit.html" method="POST">
+				<div class="form-group row">
+					<label class="required col-form-label col-lg-4" for="name">Name:</label>
+					<div class="col-lg-4">
+						<input class="form-control" type="text" id="name" name="name">
 					</div>
-					
-					<label for="been">Have you been to the restaurant?</label>
-					<input type="radio" id="choice1" name="been" value="no">
-					<label for="choice1">No</label>
-					<input type="radio" id="choice2" name="been" value="yes">
-					<label for="choice2">Yes</label> <br />
-					
-					<label class="required" for="days">Best days to contact you:</label>
-					<input type="checkbox" id="mon" name="days" value="mon">
-					<label for="mon">M</label>
-					<input type="checkbox" id="tue" name="days" value="tue">
-					<label for="tue">T</label>
-					<input type="checkbox" id="wed" name="days" value="wed">
-					<label for="wed">W</label>
-					<input type="checkbox" id="thu" name="days" value="thu">
-					<label for="thu">Th</label>
-					<input type="checkbox" id="fri" name="days" value="fri">
-					<label for="fri">F</label> <br />
-					
-					<input type="submit" name="submit" value="Send Request">
-				</form>
-			</section>
+					<div class="col-lg-4"></div>
+				</div>
+				<div class="form-group row">
+					<label class="required col-form-label col-lg-4" for="email">Email:</label>
+					<div class="col-lg-4">
+						<input class="form-control" type="text" id="email" name="email">
+					</div>
+					<div class="col-lg-4"></div>
+				</div>
+				<div class="form-group row">
+					<label class="required col-form-label col-lg-4" for="phone">Phone:</label>
+					<div class="col-lg-4">
+						<input class="form-control" type="text" id="phone" name="phone">
+					</div>
+					<div class="col-lg-4"></div>
+				</div>
+				<div class="form-group row">
+					<label class="required col-form-label col-lg-4" for="reason">Reason for Inquiry:</label>
+					<div class="col-lg-4">
+						<select class="custom-select" id="reason" name="reason">
+							<option value="catering" selected>Catering</option>
+							<option value="party">Private Party</option>
+							<option value="feedback">Feedback</option>
+							<option value="other">Other</option>
+						</select>
+					</div>
+					<div class="col-lg-4"></div>
+				</div>
+				<div class="form-group row" id="additional">
+					<label class="col-form-label col-lg-4" for="info">Additional Information:</label>
+					<div class="col-lg-4">
+						<textarea class="form-control" id="info" name="info"></textarea>
+					</div>
+					<div class="col-lg-4"></div>
+				</div>
+				<div class="form-group row">
+					<label class="col-form-label col-lg-4" for="been">Have you been to the restaurant?</label>
+					<div class="col-lg-8">
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" id="choice1" name="been" value="no">
+							<label class="form-check-label" for="choice1">No</label>
+							<input class="form-check-input" type="radio" id="choice2" name="been" value="yes">
+							<label class="form-check-label" for="choice2">Yes</label>
+						</div>
+					</div>
+				</div>
+				<div class="form-group row">
+					<label class="required col-form-label col-lg-4" for="days">Best days to contact you:</label>
+					<div class="col-lg-8">
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="checkbox" id="mon" name="days" value="mon">
+							<label class="form-check-label" for="mon">M</label>
+							<input class="form-check-input" type="checkbox" id="tue" name="days" value="tue">
+							<label class="form-check-label" for="tue">T</label>
+							<input class="form-check-input" type="checkbox" id="wed" name="days" value="wed">
+							<label class="form-check-label" for="wed">W</label>
+							<input class="form-check-input" type="checkbox" id="thu" name="days" value="thu">
+							<label class="form-check-label" for="thu">Th</label>
+							<input class="form-check-input" type="checkbox" id="fri" name="days" value="fri">
+							<label class="form-check-label" for="fri">F</label>
+						</div>
+					</div>
+				</div>
+				
+				<div class="form-group row">
+					<div class="col-lg-4"></div>
+					<div class="col-lg-2">
+						<input class="btn btn-primary" type="submit" name="submit" value="Send Request">
+					</div>
+					<div class="col-lg-6"></div>
+				</div>
+			</form>
 			
 			<footer>
 				<p style="text-align:center">7 Main St., Port Jefferson, New York, 11777</p>
