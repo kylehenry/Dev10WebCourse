@@ -4,6 +4,23 @@ Date Created: 1/7/2020
 Most recent revision: 1/9/2020
 */
 
+nav {
+	border-top: thin #5b7d87 solid;
+	border-bottom: thin #5b7d87 solid;
+	padding-top: 12px;
+	padding-bottom: 12px;
+}
+
+nav .btn, .card-header {
+	background-color: #5b7d87;
+	color: #fef9ff;
+}
+
+nav .btn:hover {
+	font-weight: bold;
+}
+
+/*
 body {
 	max-width: 1000px;
 	margin: 0 auto;
@@ -53,3 +70,4 @@ nav a:hover {
 .clear-float {
 	clear: both;
 }
+*/
