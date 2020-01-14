@@ -1,23 +1,31 @@
 /*
 Name: Kyle Johnson
 Date Created: 1/7/2020
-Most recent revision: 1/9/2020
+Most recent revision: 1/13/2020
 */
 
-nav {
-	border-top: thin #5b7d87 solid;
-	border-bottom: thin #5b7d87 solid;
-	padding-top: 12px;
-	padding-bottom: 12px;
+body {
+	background-color: #e5d4ed;
+	color: #5941a9;
 }
 
-nav .btn, .card-header {
-	background-color: #5b7d87;
-	color: #fef9ff;
+.jumbotron, .carousel-item, footer {
+	background-color: #5941a9;
+	color: #e5d4ed;
 }
 
-nav .btn:hover {
-	font-weight: bold;
+.carousel-item {
+	height: 200px;
+	text-align: center;
+	padding-top: 70px;
+}
+
+#homePageCarousel {
+	margin-bottom: 5px;
+}
+
+.nav {
+	margin-bottom: 5px;
 }
 
 /*
