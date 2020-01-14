@@ -14,7 +14,6 @@ Most recent revision: 1/12/2020
 		<script src="https://kit.fontawesome.com/1fd4c58206.js" crossorigin="anonymous"></script>
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 		<link href="styles/restaurantStyles.css" rel="stylesheet" type="text/css" />
-		
 		<style>
 			caption {
 				text-align: left;
@@ -22,12 +21,7 @@ Most recent revision: 1/12/2020
 			}
 			
 			#bevs {
-				width: 50%;
 				border: 1px solid #546a7b
-			}
-			
-			table, td {
-				padding: 0;
 			}
 			
 			tr {
@@ -35,7 +29,7 @@ Most recent revision: 1/12/2020
 			}
 			
 			#bevs tr:nth-child(even) {
-				background-color: #e4c3ad;
+				background-color: lightgray;
 			}
 		</style>
 	</head>
@@ -59,41 +53,84 @@ Most recent revision: 1/12/2020
 			</ul>
 			
 			<section>
+				<!--
 				<table align="center">
 					<tr>
 						<td width="30%"><h3 style="text-align:center">Apple</h3><p style="text-align:center">Made with locally-grown apples and just the right amount of cinnimon,
 							it's the perfect mix of sweet and tangy.</p></td>
-						<td width="30%"><h3 style="text-align:center">Cherry</h3><p style="text-align:center">Crispy criss-crossed crust over sweet cherries always hits the spot.</p></td>
-						<td width="30%"><h3 style="text-align:center">Blueberry</h3><p style="text-align:center">Experience the taste of Maine.</p></td>
+						<td width="30%"><h3 style="text-align:center">Cherry</h3><p style="text-align:center">Crispy criss-crossed 
+							crust over sweet cherries always hits the spot.</p></td>
+						<td width="30%"><h3 style="text-align:center">Blueberry</h3><p style="text-align:center">Experience the taste 
+							of Maine.</p></td>
 					</tr>
 					<tr>
-						<td width="30%"><h3 style="text-align:center">Pumpkin</h3><p style="text-align:center">The Fall classic, better than ever.</p></td>
-						<td width="30%"><h3 style="text-align:center">Key Lime</h3><p style="text-align:center">Perfectly tangy custard with wonderfully crispy crust.</p></td>
-						<td width="30%"><h3 style="text-align:center">Chocolate</h3><p style="text-align:center">Chocolate pudding in your choice of graham cracker or our classic crust.</p></td>
+						<td width="30%"><h3 style="text-align:center">Pumpkin</h3><p style="text-align:center">The Fall classic, 
+							better than ever.</p></td>
+						<td width="30%"><h3 style="text-align:center">Key Lime</h3><p style="text-align:center">Perfectly tangy custard 
+							with wonderfully crispy crust.</p></td>
+						<td width="30%"><h3 style="text-align:center">Chocolate</h3><p style="text-align:center">Chocolate pudding 
+							in your choice of graham cracker or our classic crust.</p></td>
 					</tr>
 				</table>
+				-->
 				
-				<table id="bevs">
-					<tr>
-						<td colspan="2"><p><strong>Beverages</strong></p></td>
-					</tr>
-					<tr>
-						<td>Bottled Water</td>
-						<td>$1.00</td>
-					</tr>
-					<tr>
-						<td>Tea</td>
-						<td>$2.50</td>
-					</tr>
-					<tr>
-						<td>Coffee</td>
-						<td>$2.50</td>
-					</tr>
-					<tr>
-						<td>Soda</td>
-						<td>$2.00</td>
-					</tr>
-				</table>
+				<div class="row">
+					<div class="col">
+						<h3 style="text-align:center">Apple</h3><p style="text-align:center">Made with locally-grown apples and just the right amount of cinnimon,
+							it's the perfect mix of sweet and tangy.</p>
+					</div>
+					<div class="w-100 d-md-none"></div>
+					<div class="col">
+						<h3 style="text-align:center">Cherry</h3><p style="text-align:center">Crispy criss-crossed 
+							crust over sweet cherries always hits the spot.</p>
+					</div>
+					<div class="w-100 d-lg-none"></div>
+					<div class="col">
+						<h3 style="text-align:center">Blueberry</h3><p style="text-align:center">Experience the taste 
+							of Maine.</p>
+					</div>
+					<div class="w-100 d-md-none d-lg-block hidden-md"></div>
+					<div class="col">
+						<h3 style="text-align:center">Pumpkin</h3><p style="text-align:center">The Fall classic, 
+							better than ever.</p>
+					</div>
+					<div class="w-100 d-lg-none"></div>
+					<div class="col">
+						<h3 style="text-align:center">Key Lime</h3><p style="text-align:center">Perfectly tangy custard 
+							with wonderfully crispy crust.</p>
+					</div>
+					<div class="w-100 d-md-none"></div>
+					<div class="col">
+						<h3 style="text-align:center">Chocolate</h3><p style="text-align:center">Chocolate pudding 
+							in your choice of graham cracker or our classic crust.</p>
+					</div>
+				</div>
+
+				<div class="row justify-content-center">
+					<div class="col-lg-6">
+						<table class="table" id="bevs">
+							<tr>
+								<td colspan="2"><p><strong>Beverages</strong></p></td>
+							</tr>
+							<tr>
+								<td>Bottled Water</td>
+								<td>$1.00</td>
+							</tr>
+							<tr>
+								<td>Tea</td>
+								<td>$2.50</td>
+							</tr>
+							<tr>
+								<td>Coffee</td>
+								<td>$2.50</td>
+							</tr>
+							<tr>
+								<td>Soda</td>
+								<td>$2.00</td>
+							</tr>
+						</table>
+					</div>
+				</div>
 			</section>
 			
 			<footer>
