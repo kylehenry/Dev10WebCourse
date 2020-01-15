@@ -28,6 +28,14 @@ body {
 	margin-bottom: 5px;
 }
 
+.js-alert {
+	color: black;
+	font-weight: bold;
+	text-align: center;
+    padding:30px 10px 30px 36px;
+	background-color: #f2c779;
+}
+
 /*
 body {
 	max-width: 1000px;
