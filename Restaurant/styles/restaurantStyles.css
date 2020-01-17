@@ -9,9 +9,23 @@ body {
 	color: #5941a9;
 }
 
-.jumbotron, .carousel-item, footer {
+.nav-pills .nav-link.active {
+    background-color: #5941a9;
+	color: e5d4ed;
+}
+
+.nav-pills .nav-link:not(.active) {
+	color: #5941a9;
+}
+
+.jumbotron, footer {
 	background-color: #5941a9;
 	color: #e5d4ed;
+}
+
+.carousel-item {
+	background-color: #6d72c3;
+	color: #1d1128;
 }
 
 .carousel-item {
@@ -34,6 +48,14 @@ body {
 	text-align: center;
     padding:30px 10px 30px 36px;
 	background-color: #f2c779;
+}
+
+.news {
+	font-size: 25px;
+}
+
+.desc {
+	font-size: 25px;
 }
 
 /*

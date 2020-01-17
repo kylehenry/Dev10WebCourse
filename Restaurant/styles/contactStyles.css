@@ -17,3 +17,13 @@
 .form-check-label {
 	padding-right: 20px;
 }
+
+.btn-primary {
+	background-color: #5941a9;
+	border-color: #5941a9;
+}
+
+.btn-primary:hover {
+	background-color: #6d72c3;
+	border-color: #6d72c3;
+}
